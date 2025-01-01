@@ -25,7 +25,5 @@ Competitive programming is a sport that involves solving challenging algorithmic
 
 ---
 
-## Structure
 
-The repository is organized as follows:
 
