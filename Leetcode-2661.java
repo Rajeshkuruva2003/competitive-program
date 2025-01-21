@@ -26,12 +26,7 @@ class Solution {
 
             //rowFeq[r] will be equal of no. of columns
             //colFeq[c] will be equal of no. of rows
-            if(rowFeq[r]==n || colFeq[c]==m){ 
-                return i;
-            }
-        }
-
-        return -1;
+     return -1;
     }
 
 }
