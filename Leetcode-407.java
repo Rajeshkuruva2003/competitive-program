@@ -20,8 +20,7 @@ class Solution {
             // Pass 1: Spread constraints from top-left to bottom-right
             for (int i = 1; i < m - 1; i++) {
                 for (int j = 1; j < n - 1; j++) {
-                    int val = Math.max(heightMap[i][j], 
-                                       Math.min(vols[i - 1][j], vols[i][j - 1]));
+                    int val = Math.max(heightMap[i][j], Math.min(vols[i - 1][j], vols[i][j - 1]));
                     if (init || vols[i][j] > val) {
                         vols[i][j] = val;
                         upt = true;
@@ -53,4 +52,4 @@ class Solution {
         }
         return res;
     }
-}
+}  
