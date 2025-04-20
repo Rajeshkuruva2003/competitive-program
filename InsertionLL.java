@@ -23,6 +23,8 @@ class Main {
         head=insertK(head,8,3);
         head=insertBefore(head,6,78);
         printLL(head);
+        System.out.print(lengthOfLL(head));
+
     }
 
     public static Node constructLL(int arr[]) {
@@ -87,7 +89,7 @@ class Main {
             System.out.println("Position is out of bounds.");
             return head;
         }
-
+ 
         newNode.next = temp.next;
         temp.next = newNode;
 
@@ -117,6 +119,15 @@ class Main {
         }
 
         return head;
+    }
+    public static int lengthOfLL(Node head){
+        int cnt=0;
+        Node temp=head;
+        while(temp!=null){
+            temp=temp.next;
+            cnt++;
+        }
+        return cnt;
     }
 
 }
