@@ -11,3 +11,5 @@ class Solution {
         return cnt;
     }
 }
+/////
+return Integer.bitCount(start^goal);
