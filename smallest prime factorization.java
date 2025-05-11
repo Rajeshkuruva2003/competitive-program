@@ -23,6 +23,8 @@ class Main{
             }
         }
          for (int num: ls){
+            System.out.print("Prime factors of " + num + ": ");
+
             while(num!=1){
                 System.out.println(spf[num]+" ");
                 num=num/spf[num];
