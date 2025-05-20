@@ -31,7 +31,9 @@ class StackExample {
             return stack[top];
         }
     }
-
+    int size(){
+        return top+1;
+    }
     void printStack() {
         if (top == -1) {
             System.out.println("Stack is empty.");
@@ -69,7 +71,7 @@ class StackExample {
          s.peek();       // Show top element
             
         // Print after popping
-
+        System.out.println("current size:"+ s.size());
         sc.close();
     }
 }
