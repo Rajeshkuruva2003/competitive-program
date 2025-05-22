@@ -27,3 +27,5 @@ class PrefixToPostfix{
         
     }
 }
+tc:O(2n)
+sc:O(n)
