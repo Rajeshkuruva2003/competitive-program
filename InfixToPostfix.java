@@ -54,3 +54,5 @@ public class InfixToPostfix {
         System.out.println("Postfix expression: " + ans);
     }
 }
+tc:O(n)+O(n)
+sc:O(n)+O(n)
