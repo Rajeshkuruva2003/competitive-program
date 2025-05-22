@@ -27,3 +27,5 @@ class PrefixToInfix{
         
     }
 }
+tc:O(n)
+sc:O(n)
