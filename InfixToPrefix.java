@@ -67,3 +67,5 @@ public class InfixToPrefix {
         System.out.println("Prefix expression: " + prefix);
     }
 }
+tc:O(3n)
+sc:O(n)
