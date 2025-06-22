@@ -20,4 +20,5 @@ class Solution {
         return ls;
     }
 }
-tc:O(V+E)
+tc:O(N)+O(2E)
+sc:O(N)
