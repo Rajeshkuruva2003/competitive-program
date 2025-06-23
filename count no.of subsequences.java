@@ -29,7 +29,6 @@ class Main{
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        List<Integer> ls=new ArrayList<>();
         System.out.println(recur(0,k,arr,n,0));
     }
 }
