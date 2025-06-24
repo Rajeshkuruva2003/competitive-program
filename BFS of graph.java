@@ -19,6 +19,39 @@ class Solution {
         }
         return ls;
     }
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Take number of vertices and edges
+        System.out.print("Enter number of vertices: ");
+        int V = sc.nextInt();
+
+        System.out.print("Enter number of edges: ");
+        int E = sc.nextInt();
+
+        // Create adjacency list
+        List<List<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+
+        // Take edges input
+        System.out.println("Enter edges (u v):");
+        for (int i = 0; i < E; i++) {
+            int u = sc.nextInt();
+            int v = sc.nextInt();
+            adj.get(u).add(v);
+            adj.get(v).add(u); // remove this line for a directed graph
+        }
+
+        // Call BFS
+        List<Integer> bfsResult = bfsOfGraph(V, adj);
+
+        System.out.println("BFS Traversal: " + bfsResult);
+    }
+
+
 }
+
 tc:O(N)+O(2E)
 sc:O(N)
