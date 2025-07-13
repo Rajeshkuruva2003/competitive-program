@@ -1,6 +1,6 @@
 class Solution {
     // Function to return Breadth First Search Traversal of given graph.
-    public ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
+    public ArrayList<Integer> bfsOfGraph(ArrayList<ArrayList<Integer>> adj) {
         ArrayList<Integer> ls=new ArrayList<>();
         Queue<Integer> qu=new LinkedList<>();
         int V=adj.size();
