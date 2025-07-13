@@ -40,3 +40,5 @@ public class Main {
         System.out.println("DFS Traversal: " + dfsResult);
     }
 }
+TC:O(n)+O(2e)
+SC:O(n)    
