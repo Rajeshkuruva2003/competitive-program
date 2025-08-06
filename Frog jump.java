@@ -99,10 +99,10 @@ public class Main {
                 r=pre1+Math.abs(n[i]-n[i-2]);
             }
             int cur=Math.min(l,r);
-            pre=pre1;
-            pre1=cur;
+            pre1=pre;
+            pre=cur;
         }
-        System.out.println(cur);
+        System.out.println(pre);
     }
 }
 TC:O(n)
