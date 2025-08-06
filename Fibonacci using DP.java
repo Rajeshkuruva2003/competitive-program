@@ -21,6 +21,24 @@ public class FibonacciDP {
 }
 TC:O(n)
 SC:O(n)
+                               (OR)
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        int n=5;
+        int pre=0;
+        int pre1=1;
+        int cur=0;
+        for(int i=2;i<=n;i++){
+            cur=pre+pre1;
+            pre=pre1;
+            pre1=cur;
+        }
+        System.out.println(cur);
+    }
+}    
+TC:O(n)
+Sc:O(1)                           
                                         TOP-DOWN DP
 import java.util.*;
 class Main {
