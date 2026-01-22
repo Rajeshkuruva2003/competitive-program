@@ -1,0 +1,18 @@
+<html>
+<body>
+    <h1>hello world</h1>
+    <h2>this is a test</h2>
+    <p id="emo"></p>
+    <script>
+        function Person(firstName,lastName,age,eyecolor){
+            this.firstName=firstName;
+            this.lastName=lastName;
+            this.age=age;
+            this.eyecolor=eyecolor;
+
+        }
+        const myfather=new Person("john","deo",56,black);
+        const mymother=new Person("jane","deo",89,blue);
+        document.getElementById("emo").innerHTML="my father is" + myfather.firstName +" and is " + myfather.age + ".";
+    </script>
+</body>
